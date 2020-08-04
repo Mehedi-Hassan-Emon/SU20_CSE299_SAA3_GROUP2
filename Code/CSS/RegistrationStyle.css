@@ -1,0 +1,56 @@
+body{
+
+	width- 500px;
+	background-color: white;
+
+	font-family: Arial, Helvitca, sans-serif;
+
+	font-size: 20px;
+	font-weight: 200;
+
+	line-height: 1.6em;
+	padding: 50px;
+
+	margin: auto;
+	
+} 
+
+a{
+	text-decoration: none;
+	color: #008080;
+}
+
+.container{
+
+	margin-top: 380px;
+	color: #008080;
+	margin: auto;
+}
+
+
+.my-form{
+	padding: 20 px;
+}
+
+.form-group{
+	padding-bottom: 10px;
+}
+
+.my-form input[type= "text"]{
+	padding:2px;
+	width: 20%;
+}
+
+.my-form input[type="submit"] {
+	padding: 20px;
+	width: 20%;
+	background-color: #008080;
+	color: white;
+	padding: 20px;
+}
+
+.my-form input[type="Button"] {
+	padding: 2px;
+	width: 10%;
+}
+
