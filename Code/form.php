@@ -1,49 +1,57 @@
+
 <!DOCTYPE HTML>
 <html>
 <head>
   <title>Register Form</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
 </head>
 <body>
  <form action="insert.php" method="POST">
-  <table>
-   <tr>
-    <td>Name :</td>
-    <td><input type="text" name="username" required></td>
-   </tr>
-   <tr>
-    <td>Password :</td>
-    <td><input type="password" name="password" required></td>
-   </tr>
-   <tr>
-    <td>Gender :</td>
-    <td>
-     <input type="radio" name="gender" value="m" required>Male
-     <input type="radio" name="gender" value="f" required>Female
-    </td>
-   </tr>
-   <tr>
-    <td>Email :</td>
-    <td><input type="email" name="email" required></td>
-   </tr> 
-   <tr>
-    <td>Phone no :</td>
-    <td>
-     <select name="phoneCode" required>
-      <option selected hidden value="">Select Code</option>
-      <option value="977">977</option>
-      <option value="978">978</option>
-      <option value="979">979</option>
-      <option value="973">973</option>
-      <option value="972">972</option>
-      <option value="974">974</option>
-     </select>
-     <input type="phone" name="phone" required>
-    </td>
-   </tr>
-   <tr>
-    <td><input type="submit" value="Submit"></td>
-   </tr>
-  </table>
+  <div class="container">
+
+    <div class="row">
+        <div class="col-sm-3">
+
+        <h1>Registration</h1>
+        <hr class="mb-3">
+        <table>
+         <label for="firstname"><b>First Name</b></label>
+          <input class="form-control" id="firstname" type="text" name="firstname" required>
+
+          <label for="lastname"><b>Last Name</b></label>
+          <input class="form-control" id="lastname" type="text" name="lastname" required>
+
+          <label for="age"><b>age</b></label>
+          <input class="form-control" id="age" type="text" name="age" required>
+
+          <label for="gender"><b>Gender <br> </b></label>
+          <br>
+          <input type="radio" name="gender" value="m" required> Male
+          <input type="radio" name="gender" value="f" required>Female
+
+          <label for="email"><b>Email Address</b></label>
+          <input class="form-control" id="email"  type="email" name="email" required>
+
+          <label for="phone"><b>Phone Number</b></label>
+          <input class="form-control" id="phone"  type="text" name="phone" required>
+
+          <label for="password"><b>Password</b></label>
+          <input class="form-control" id="password"  type="password" name="password" required>
+
+         <tr>
+
+           <hr class="mb-3"> <input class="btn btn-primary" type="submit" value="Submit"> </tr>
+
+
+          <br> <br>
+          <tr> <p> Already a user? <a href="login.php"> <b> Log in </a> </p> </tr>
+
+         
+        </table>
+      </div>
+    </div>
+  </div>
  </form>
 </body>
 </html>
